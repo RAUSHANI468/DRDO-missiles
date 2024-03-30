@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question and Answer Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .question {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .answer {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #666;
+      display: none;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .question::before {
+      content: "\25B8";
+      font-size: 20px;
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.3s ease-out;
+    }
+
+    .open::before {
+      transform: translateY(-50%) rotate(90deg);
+    }
+
+    .separator {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+
+    .back-to-top {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-to-top a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="question">
+    Q: What is Lorem Ipsum?
+    <div class="answer">
+      A: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="question">
+    Q: Why do we use it?
+    <div class="answer">
+      A: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="question">
+    Q: Where does it come from?
+    <div class="answer">
+      A: Contrary to popular belief, Lorem Ipsum is not simply random text.
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="question">
+    Q: Where can I get some?
+    <div class="answer">
+      A: There are many variations of passages of Lorem Ipsum available.
+    </div>
+  </div>
+
+  <div class="back-to-top"><a href="#">Back to Top</a></div>
+</div>
+
+</body>
+</html>

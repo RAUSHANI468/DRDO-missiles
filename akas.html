@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Information</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #209187, #b069eb);
+        }
+        .header-top {
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    column-gap: 813px;
+    align-items: center;
+    height: 20px;
+    background-color: rgba(7, 83, 97, 0.822);
+  }
+  
+  .header-top .logo {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .header-top .header-item {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .header-top .header-item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  
+
+.menu-opt{
+    
+    text-align:center;
+    background-color:#02374d;
+    
+}
+.menu-opt ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-opt ul li{
+   
+   width:120px;
+   margin:15px;
+   height: 25px;
+  
+}
+.menu-opt ul li a{
+    text-decoration:none;
+    color: white;
+}
+.active,.menu-opt ul li:hover{
+    background-color: #124559;
+    border-radius:3px;
+    
+}
+.menu-opt .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+
+}
+.menu-opt ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:#124559 ;
+    margin-top: 1px;
+    margin-left:1px;
+    border-radius: 2px;
+    /* background-color: transparent; */
+}
+.menu-opt ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 1px;
+
+}
+.menu-opt ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted transparent;
+    background-color: transparent;
+    border-radius: 2px;
+    text-align: left;
+}
+.menu-opt ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-opt ul li:hover .sub-menu-1 ul li a:hover{
+    color:rgb(18, 226, 139);
+}
+
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .image-container {
+            margin-right: 20px;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .image-container:hover {
+            transform: translateY(50px);
+        }
+
+        .info-container {
+            flex-grow: 1;
+        }
+
+        .info {
+            font-size: 18px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header-top">
+        <div class="logo">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="header-item">
+          <p><a href="#">FAQs</a></p>
+          
+        </div>
+      </nav>
+          <div class="menu-opt">
+            <ul>
+                
+               
+                 <li class="active"><a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                      <div class="sub-menu-1">
+                        <ul>
+                          <li><a href="#">mission</a></li>
+                          <li><a href="#">mission</a></li>
+                          <li><a href="#">mission</a></li>
+    
+                        </ul>
+                      </div>
+                 </li>
+                 <li><a href="#about"><i class="fa-solid fa-user"></i>About us</a>
+                       <!-- <div class="sub-menu-1">
+                         <ul>
+                           <li><a href="#">mission</a></li>
+                           <li><a href="#">mission</a></li>
+                           <li><a href="#">mission</a></li>
+                         </ul>
+                  </div> -->
+                </li>
+                 <li><a href="#"><i class="fa-solid fa-clone"></i>services</a>
+                    <div class="sub-menu-1">
+                      <ul>
+                         <li><a href="others.html">More Missiles</a></li>
+                         <li><a href="#">Training</a></li>
+                         <li><a href="#">Q&As</a></li>
+                      </ul>
+                    </div>
+                 </li>
+                 <li><a href="contactus.html"><i class="fa-solid fa-edit"></i>Contact Us</a>
+                  <!-- <div class="sub-menu-1">
+                    <ul>
+                       <li><a href="#">Web Design</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                          <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                          </ul>
+                        </div>
+                      </li> -->
+                    
+                        <!-- <div class="sub-menu-2>
+                          <ul>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#">Python </a></li>
+                            <li><a href="#">Deep Learning</a></li>
+                          </ul>
+                        </div> 
+                      </li>
+                      <li><a href="#">Java</a></li>
+                    </div> -->
+                 </li>  
+             </ul>
+          </div>
+    <div class="container">
+        <div class="image-container">
+            <img src="akash_4.png" alt="Placeholder Image" width="300">
+        </div>
+        <div class="info-container">
+            <div class="info">
+                <h2>Akash</h2>
+                <p>AKASH is a Short Range Surface to Air Missile system to protect vulnerable areas and vulnerable points from air attacks. AKASH Weapon System can simultaneously engage Multiple Targets in Group Mode or Autonomous Mode. It has built in Electronic Counter-Counter Measures (ECCM) features. The entire weapon system has been configured on mobile platforms. AKASH Weapon Systems has been inducted and is operational with the Indian Air Force (IAF) as well as the Indian Army (IA).</p>
+                <!-- <p>Sed quis magna sodales, consectetur leo nec, volutpat enim. Nam nec efficitur nibh. Nam non nulla vestibulum, dictum urna et, cursus turpis. Sed tincidunt vestibulum urna, ac hendrerit libero imperdiet et. Nulla at velit ultrices, faucibus sem sed, feugiat lorem. Ut suscipit felis at leo gravida, a ultrices ante volutpat.</p> -->
+            </div>
+            <button class="back-button"><a href="Assignment1.html" style="text-decoration: none; color: black;">Back</a></button>
+        </div>
+    </div>
+</body>
+</html>
